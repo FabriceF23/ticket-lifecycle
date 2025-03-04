@@ -1,66 +1,103 @@
+<!-- osTicket Logo -->
 <p align="center">
-  ![osTicket logo](https://i.imgur.com/Clzj7Xs.png)
+  <img src="https://i.imgur.com/Clzj7Xs.png" height="75%" width="100%" alt="osTicket logo"/>
 </p>
 
-# osTicket - Ticket Lifecycle: Intake Through Resolution
+<!-- Title of the Tutorial -->
+<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
+<p>This tutorial explains the steps of a ticket’s lifecycle in the osTicket system, from when it's created to when it's resolved.</p>
 
-This tutorial explains how a ticket in the osTicket system goes from being created to being solved.
+<!-- Environments and Technologies Used -->
+<h2>Environments and Technologies Used</h2>
+<ul>
+  <li>Microsoft Azure (Virtual Machines/Compute)</li>
+  <li>Remote Desktop</li>
+  <li>Internet Information Services (IIS)</li>
+</ul>
 
-## Environments and Technologies Used
+<!-- Operating System Used -->
+<h2>Operating Systems Used</h2>
+<ul>
+  <li>Windows 10 (21H2)</li>
+</ul>
 
-- Microsoft Azure (Virtual Machines/Computers)
-- Remote Desktop
-- Internet Information Services (IIS)
+<!-- Ticket Lifecycle Stages -->
+<h2>Ticket Lifecycle Stages</h2>
+<ul>
+  <li>Intake</li>
+  <li>Assignment and Communication</li>
+  <li>Working the Issue</li>
+  <li>Resolution</li>
+</ul>
 
-## Operating Systems Used
+<!-- Lifecycle Stage: Intake -->
+<h3 align="center">Intake</h3>
+<p>
+  User **Ken** creates a ticket for help because he's having an issue.  
+  He submits the ticket through the system.
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/ewueu9b.png" height="75%" width="100%" alt="Open a Ticket"/>
+</p>
 
-- Windows 10 (21H2)
+<!-- Lifecycle Stage: Ticket Assignment -->
+<h3 align="center">Ticket Assignment</h3>
+<p>
+  Support agent **John Doe** logs into the system and sees Ken's ticket.  
+  He notices it’s an urgent ticket (Sev-A emergency), so he assigns it to a System Administrator for more help.
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/i3sa7FH.jpg" height="75%" width="100%" alt="Support agent login"/>
+</p>
 
-## Stages of a Ticket's Lifecycle
+<!-- Lifecycle Stage: Communication -->
+<h3 align="center">Communication</h3>
+<p>
+  Agent **John** writes a message to make sure the System Administrator knows the ticket is urgent.  
+  He assigns the ticket with proper details so it can be handled properly.
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/wVucqKf.png" height="75%" width="100%" alt="Communication"/>
+</p>
 
-- Intake: When a user submits a ticket.
-- Assignment and Communication: The ticket is assigned to a team, and updates are shared.
-- Working the Issue: The team works on fixing the issue.
-- Resolution: The problem is solved, and the ticket is closed.
+<!-- Lifecycle Stage: Working the Issue -->
+<h3 align="center">Working the Issue</h3>
+<p>
+  System Administrator **Jane Doe** logs in to see the ticket.  
+  She begins to work on the problem and keeps **John** updated by communicating through the system.
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/i61WQKi.jpg" height="75%" width="100%" alt="Sys admin agent login"/>
+</p>
+<p>
+  Once Jane fixes the issue, she changes the ticket status from **open** to **resolved**.
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/DYPJufr.png" height="75%" width="100%" alt="Working the issue"/>
+</p>
 
-## The Stages Explained
+<!-- Lifecycle Stage: Resolution -->
+<h3 align="center">Resolution</h3>
+<p>
+  Agent **John** sees that the ticket is now resolved. He gets a message from **Jane** saying the issue has been fixed.
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/kRpUysm.png" height="75%" width="100%" alt="Ticket Resolution"/>
+</p>
 
-### 1. Intake - When a User Sends a Ticket
+<!-- Final Explanation -->
+<p>
+  This is a simple example of how a ticket gets created by a user, assigned to an agent, worked on, and finally resolved.  
+  There can be more complex situations, such as:
+</p>
+<ul>
+  <li>The ticket being reassigned to another department.</li>
+  <li>The ticket being escalated to a higher priority if the issue gets worse.</li>
+  <li>The ticket being passed to a more qualified agent or department for better handling.</li>
+</ul>
 
-![image](https://github.com/user-attachments/assets/c8039388-a609-427f-94ee-f15ccc297ee1)
+<p>
+  This system helps ensure that issues are solved efficiently. On average, help desk agents might handle between **10 to 100 tickets** each day depending on the company size.
+</p>
 
-![image](https://github.com/user-attachments/assets/60662abd-05c2-47ce-b83d-b240767d3fe6)
-
-In this stage, the user, Karen Doe, creates a ticket. She reports that her employees can’t access the online banking portal. This is the first step of the process where the user asks for help.
-
----
-
-### 2. Assignment and Communication
-
-![image](https://github.com/user-attachments/assets/819ec945-80bd-40a0-833f-5efe139a8ccf)
-
-At this point, John, one of the employees, sees the ticket. He assigns it to the team that deals with online banking issues. John also makes sure to update Karen about the progress and sets a special priority (SLA) for the ticket.
-
----
-
-### 3. Working the Issue
-
-![image](https://github.com/user-attachments/assets/44ca865f-a70f-4f88-a055-e9bfef272460)
-
-Jane, from the online banking team, picks up the ticket. She starts working on the issue and updates Karen, telling her that she’s actively working on a fix.
-
----
-
-### 4. Resolution - Solving the Problem
-
-![image](https://github.com/user-attachments/assets/ed8053a1-69cf-4d21-b296-f3766da6e16b)
-
-Finally, Jane finds a temporary solution to the problem. She shares this with Karen and explains the permanent fix. Once everything is solved, the ticket is marked as resolved.
-
----
-
-This tutorial shows how tickets are created, worked on, and resolved in the osTicket system. While this is a simple version of what happens, sometimes tickets might need to be passed to different departments, their priority might be changed, or they might need more work from a different team.
-
-Help desk agents often handle a lot of tickets every day, depending on the size of the company. Now that you've learned about the process, remember to clean up your Azure environment to avoid unnecessary charges.
-
-Don’t forget to close your Remote Desktop connection and delete the resource groups you created at the beginning of the tutorial. Make sure they are deleted properly to avoid extra costs.
+<p>I hope this guide helped you understand how a ticket moves through the system from the moment it's created to when it's resolved. If you’re interested in becoming a help desk specialist, practicing this process will help you get better at solving real-world issues!</p>**
