@@ -4,11 +4,11 @@
 
 # osTicket - Ticket Lifecycle: Intake Through Resolution
 
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.
+This tutorial explains how a ticket in the osTicket system goes from being created to being solved.
 
 ## Environments and Technologies Used
 
-- Microsoft Azure (Virtual Machines/Computer)
+- Microsoft Azure (Virtual Machines/Computers)
 - Remote Desktop
 - Internet Information Services (IIS)
 
@@ -16,57 +16,51 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 - Windows 10 (21H2)
 
-## Ticket Lifecycle Stages
+## Stages of a Ticket's Lifecycle
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+- Intake: When a user submits a ticket.
+- Assignment and Communication: The ticket is assigned to a team, and updates are shared.
+- Working the Issue: The team works on fixing the issue.
+- Resolution: The problem is solved, and the ticket is closed.
 
-## Lifecycle Stages
+## The Stages Explained
 
-### Intake Where Users Send A Ticket Request
+### 1. Intake - When a User Sends a Ticket
 
 ![image](https://github.com/user-attachments/assets/c8039388-a609-427f-94ee-f15ccc297ee1)
 
 ![image](https://github.com/user-attachments/assets/60662abd-05c2-47ce-b83d-b240767d3fe6)
 
-The user Karen Doe is submitting a ticket that her employees cannot access the online banking portal, which represents the intake stage of the ticket lifecycle.
+In this stage, the user, Karen Doe, creates a ticket. She reports that her employees can’t access the online banking portal. This is the first step of the process where the user asks for help.
 
 ---
 
-### Assignment And Communication
+### 2. Assignment and Communication
 
 ![image](https://github.com/user-attachments/assets/819ec945-80bd-40a0-833f-5efe139a8ccf)
 
-Shows John, an employee, opened the ticket, assigned the ticket to the online banking team, gave the customer frequent updates, assigned it to the proper help topic, and set the SLA to Sev-A.
+At this point, John, one of the employees, sees the ticket. He assigns it to the team that deals with online banking issues. John also makes sure to update Karen about the progress and sets a special priority (SLA) for the ticket.
 
 ---
 
-### Working The Issue
+### 3. Working the Issue
 
 ![image](https://github.com/user-attachments/assets/44ca865f-a70f-4f88-a055-e9bfef272460)
 
-The ticket was assigned to the online banking team. Jane took the ticket and provided an update to the customer that she is working on a resolution to the issue.
+Jane, from the online banking team, picks up the ticket. She starts working on the issue and updates Karen, telling her that she’s actively working on a fix.
 
 ---
 
-### Resolution
+### 4. Resolution - Solving the Problem
 
 ![image](https://github.com/user-attachments/assets/ed8053a1-69cf-4d21-b296-f3766da6e16b)
 
-Jane found a temporary solution, provided information on the permanent resolution, and set it to resolved.
+Finally, Jane finds a temporary solution to the problem. She shares this with Karen and explains the permanent fix. Once everything is solved, the ticket is marked as resolved.
 
 ---
 
-This is a basic overview of how a user creates a ticket, how it's assigned, and how communication between agents & customers occurs, ultimately leading to a resolution.
+This tutorial shows how tickets are created, worked on, and resolved in the osTicket system. While this is a simple version of what happens, sometimes tickets might need to be passed to different departments, their priority might be changed, or they might need more work from a different team.
 
-However, there are additional scenarios that can arise while a ticket is being processed. A ticket may be reassigned to another department, its severity level may be escalated, or it may need to be reassigned to a more qualified agent or department, depending on the impact the ticket has on the business.
+Help desk agents often handle a lot of tickets every day, depending on the size of the company. Now that you've learned about the process, remember to clean up your Azure environment to avoid unnecessary charges.
 
-I hope this tutorial provides a clearer understanding and a better general overview of a ticket’s life cycle. Help desk agents can expect to handle anywhere from 10 to 100 tickets per day, depending on the size of the company.
-
-Now that we're finished, make sure to CLEAN UP YOUR AZURE ENVIRONMENT to avoid any unnecessary charges.
-
-Remember to close your Remote Desktop connection, delete the Resource Group(s) you created at the start of the tutorial, and verify that the Resource Group has been successfully deleted.
-
----
+Don’t forget to close your Remote Desktop connection and delete the resource groups you created at the beginning of the tutorial. Make sure they are deleted properly to avoid extra costs.
