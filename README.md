@@ -1,65 +1,72 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+  ![osTicket logo](https://i.imgur.com/Clzj7Xs.png)
 </p>
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+# osTicket - Ticket Lifecycle: Intake Through Resolution
 
-<h2>Environments and Technologies Used</h2>
+This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.
 
-- Microsoft Azure (Virtual Machines/Compute)
+## Environments and Technologies Used
+
+- Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+## Operating Systems Used
 
-- Windows 10</b> (21H2)
+- Windows 10 (21H2)
 
-<h2>Ticket Lifecycle Stages</h2>
+## Ticket Lifecycle Stages
 
 - Intake
 - Assignment and Communication
 - Working the Issue
 - Resolution
 
-<h2>Lifecycle Stages</h2>
+## Lifecycle Stages
 
-<p>
-<img src="https://i.imgur.com/nAWGgLB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Within the osTicket Help Desk I created and configured in the previous projects, I used one of the end-user accounts I created called "Karen" and created a ticket. 
-</p>
-<br />
+### Intake Where Users Send A Ticket Request
 
-<p>
-<img src="https://i.imgur.com/YbvYjkl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-I assigned the ticket Help Topic to "Business Critical Outage" which was a topic I created in the previous osTicket Configuration project. "Sev-A" is top level priority and the grace period has a 1 hour response time frame and 24/7 availability which I will classify for this ticket later in theagent portal. In the title of the ticket Karen wrote "entire mobile/online banking system is down." and the description stated "My employees are reporting that users are no longer able to access the online. The ones who occasionally access it cannot log in." 
-</p>
-<br />
+![image](https://github.com/user-attachments/assets/c8039388-a609-427f-94ee-f15ccc297ee1)
 
-<p>
-<img src="https://i.imgur.com/PfQzEre.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-I logged into the agent portal for the agent I created "John Doe" and reassigned the ticket to "Jane Doe/online banking" since she I put her as part of the "online banking" team. This is also where John set the SLA plan to "Sev-A".
-</p>
-<br />
+![image](https://github.com/user-attachments/assets/60662abd-05c2-47ce-b83d-b240767d3fe6)
 
-<p>
-<img src="https://i.imgur.com/jvmKklp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-I started communicating with the guest user "Karen" as the Jane Doe agent from here on out. I was giving updates to the status of the situation and eventually gave the final update when the issue was resolved.
-</p>
-<br />
+The user Karen Doe is submitting a ticket that her employees cannot access the online banking portal, which represents the intake stage of the ticket lifecycle.
 
-<p>
-<img src="https://i.imgur.com/B4Km8hT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-After the ticket was resolved I closed it through Jane Doe since she was reassigned to it. The ticket ended in the closed tab under another mock ticket I created with another guest user account known as "ken".
-</p>
-<br />
+---
+
+### Assignment And Communication
+
+![image](https://github.com/user-attachments/assets/819ec945-80bd-40a0-833f-5efe139a8ccf)
+
+Shows John, an employee, opened the ticket, assigned the ticket to the online banking team, gave the customer frequent updates, assigned it to the proper help topic, and set the SLA to Sev-A.
+
+---
+
+### Working The Issue
+
+![image](https://github.com/user-attachments/assets/44ca865f-a70f-4f88-a055-e9bfef272460)
+
+The ticket was assigned to the online banking team. Jane took the ticket and provided an update to the customer that she is working on a resolution to the issue.
+
+---
+
+### Resolution
+
+![image](https://github.com/user-attachments/assets/ed8053a1-69cf-4d21-b296-f3766da6e16b)
+
+Jane found a temporary solution, provided information on the permanent resolution, and set it to resolved.
+
+---
+
+This is a basic overview of how a user creates a ticket, how it's assigned, and how communication between agents & customers occurs, ultimately leading to a resolution.
+
+However, there are additional scenarios that can arise while a ticket is being processed. A ticket may be reassigned to another department, its severity level may be escalated, or it may need to be reassigned to a more qualified agent or department, depending on the impact the ticket has on the business.
+
+I hope this tutorial provides a clearer understanding and a better general overview of a ticket’s life cycle. Help desk agents can expect to handle anywhere from 10 to 100 tickets per day, depending on the size of the company.
+
+Now that we're finished, make sure to CLEAN UP YOUR AZURE ENVIRONMENT to avoid any unnecessary charges.
+
+Remember to close your Remote Desktop connection, delete the Resource Group(s) you created at the start of the tutorial, and verify that the Resource Group has been successfully deleted.
+
+---
